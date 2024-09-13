@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ABOUT US</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<style>
+    body {background-color: #EEEDEB}
+</style>
+<body >
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container container">
+               
+                <h1 class="logo">CocaCola Company</h1>
+            </div>
+      </nav>
+    </header>
+<br><br><br>
+    <div class="search-container">
+        <input type="text" id="content-search" list="content" placeholder="search..">
+        <datalist id="content">
+            <option value="sejarah">
+            <option value="coca">
+            <option value="sprite">
+            <option value="fanta">
+        </datalist>
+    </div>
+    <div class="aboutus-header">
+    </div>
+    <div class="aboutus-container">
+        <h1 style="color: #000000;" id="sejarah">SEJARAH</h1>
+        <div class="aboutus-text">
+            <p>The Coca-Cola Company (NYSE: KO) adalah perusahaan multinasional yang berbasis di Amerika Serikat, bergerak di bidang minuman, termasuk produksi, penjualan, dan pemasaran konsentrat dan sirup minuman non-alkohol. Perusahaan ini berkantor pusat di Atlanta, Georgia, dan terkenal dengan produk utamanya, Coca-Cola. Formula Coca-Cola dikembangkan pada tahun 1886 oleh seorang apoteker bernama John Stith Pemberton di Columbus, Georgia. Pada tahun 1889, formula dan merek Coca-Cola dibeli oleh Asa Griggs Candler, yang mendirikan The Coca-Cola Company secara resmi pada tahun 1892. Pada tahun 2005, perusahaan ini mempekerjakan sekitar 55.000 orang.</p>
+        </div>
+        <div class="aboutus-img">
+            <img src="pic/company.webp" alt="">
+        </div>
+    </div>
+<br>
+<section>
+    <div class="s-cola">
+        <h1 id="coca">Coca-Cola</h1>
+        <div class="botol">
+            <img src="picture/coca.png" />
+            <p>Coca-Cola adalah minuman ringan berkarbonasi yang dijual di toko, restoran, dan mesin penjual otomatis di lebih dari 200 negara. Minuman ini diproduksi oleh The Coca-Cola Company yang berbasis di Atlanta, Georgia, dan sering disebut sebagai Coke (merek dagang terdaftar The Coca-Cola Company sejak 27 Maret 1944). Awalnya dibuat sebagai obat paten oleh John Pemberton pada akhir abad ke-19, Coca-Cola kemudian dibeli oleh pebisnis Asa Griggs Candler. Taktik pemasaran Candler berhasil membuat Coke mendominasi pasar minuman ringan dunia sepanjang abad ke-20.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="s-sprite">
+        <h1 id="sprite">Sprite</h1>
+        <div class="botol">
+            <img src="picture/sprite.png" />
+            <p>Sprite adalah minuman ringan berkarbonasi transparan dengan rasa lemon dan jeruk nipis, serta bebas kafein, yang diproduksi oleh The Coca-Cola Company. Produk ini awalnya berasal dari varian Fanta bernama Fanta Klare Zitrone yang dibuat di Jerman, dan kemudian diluncurkan secara resmi sebagai Sprite di Amerika Serikat pada tahun 1961. Sprite diproduksi untuk bersaing dengan kesuksesan 7 Up, memiliki karakteristik yang serupa.
+
+                Sprite dikemas dalam kaleng berwarna biru dan hijau, serta dalam botol transparan berwarna hijau (untuk versi internasional) dan botol transparan tanpa warna (untuk versi Jepang). Sejak tahun 2019, Sprite mulai dikemas dalam botol plastik transparan tanpa warna yang lebih mudah didaur ulang, yang mulai dipasarkan di Indonesia pada tanggal 18 Februari 2021.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="s-fanta">
+        <h1 id="fanta">Fanta</h1>
+        <div class="botol">
+            <img src="picture/fanta.png" />
+            <p>
+                Fanta adalah minuman soda yang diproduksi oleh The Coca-Cola Company. Fanta berasal dari Jerman sebagai pengganti Coca-Cola setelah embargo perdagangan Amerika Serikat terhadap Nazi Jerman pada tahun 1940, yang memengaruhi ketersediaan bahan-bahan Coca-Cola.
+                
+                Untuk mengatasi sanksi tersebut, direktur Coca-Cola Jerman saat itu, Max Keith, memutuskan untuk membuat produk baru dengan hanya menggunakan bahan-bahan yang tersedia di Jerman, seperti gula bit dan whey.
+                
+                Nama Fanta berasal dari sesi brainstorming, di mana Keith meminta timnya untuk "menggunakan imajinasi mereka" (dalam bahasa Jerman: Fantasie). Salah satu penjualnya, Joe Knipp, kemudian berteriak, "Fanta!"
+                
+                Pada tahun 2008, Fanta Orange mendapatkan lebih banyak sari jeruk dalam resepnya dan memperkenalkan rasa baru. Di Denmark, varian seperti Fanta Funky Orange dan Fanta Exotic juga tersedia.
+                
+                Saat ini, terdapat lebih dari 200 varian rasa Fanta di seluruh dunia.</p>
+        </div>
+    </div>
+</section>
+
+
+
+    <footer>
+        <center>
+        <div class="footerBottom">
+            <p>Copyright &copy;2024; Designed by <span class="designer">Domi</span></p>
+        </div>
+    </center>
+    </footer>
+
+    <script>
+        document.getElementById('content-search').addEventListener('input', function() {
+            const value = this.value.toLowerCase().replace(/\s+/g, '');
+            const section = document.getElementById(value);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    </script>
+
+</body>
+</html>
